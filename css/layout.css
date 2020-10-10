@@ -77,6 +77,13 @@
     margin-top: 30px;
 
 }
+
+#photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
 #footer {
     grid-area: ft;
     display: flex;
@@ -105,6 +112,18 @@
     padding: 15px; */
     
 } 
+
+figure {
+    float: right;
+    width: 90%;
+    text-align: left;
+    font-style: italic;
+    font-size: 12px;
+    text-indent: 0;
+    /* border: thin silver solid; */
+    margin: 0.5em;
+    padding: 0.5em;
+  }
 
 /* If Screen Is Wide Enough */
 @media(min-width:900px){
@@ -144,6 +163,11 @@
         height: 25px;
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    #post_text {
+        font-weight: bold;
+        text-decoration: underline;
     }
 
 }

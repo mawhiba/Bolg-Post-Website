@@ -24,12 +24,12 @@
 }
 
 #header {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 #subscribe {
     color: white;
-    font-size: 12px;
+    font-size: 18px;
 }
 
 #author {
@@ -45,6 +45,10 @@
     border-radius: 50%;
     display: inline-block;
 
+}
+
+#post_title {
+    font-size: 23px;
 }
 
 #content {
@@ -88,6 +92,17 @@
     
 }
 
+#author_bio {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#bio {
+    font-size: small;
+}
+
 #social_media {
     display: flex;
     flex-direction: row;
@@ -98,6 +113,10 @@
     height: 60px;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+#author_name {
+    font-size: 17px;
 }
 
 .facebook_icon {
@@ -114,8 +133,8 @@
 }
 
 #search_icon {
-    width: 20px;
-    height: 20px;
+    width: 27px;
+    height: 27px;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -123,9 +142,9 @@
 #post_text {
     text-indent: 50px;
     text-align: justify;
-    text-justify: inter-word;
     margin-left: 15px;
     margin-right: 15px;
+    font-size: 18px;
 }
 
 .button {
@@ -143,19 +162,198 @@
     padding: 8px 10px;
   }
 
+  blockquote {
+      /* margin-top: 100px; */
+      margin-left: 0em;
+      margin-right: 0em;
+  }
+
   @media(min-width:900px){
     #subscribe {
         color: white;
-        font-size: 15px;
+        font-size: 23px;
     }
     #header {
-        font-size: 35px;
+        font-size: 40px;
     }
     #search_icon {
-        width: 25px;
-        height: 25px;
+        width: 33px;
+        height: 33px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #author_name {
+        font-size: 20px;
+    }
+    #bio {
+        font-size: 15px;
+    }
+    #author_bio {
+        margin-top: 9px;
+    }
+    #post_title {
+        font-size: 30px;
+    }
+    #post_text {
+        font-size: 24px;
+    }
+    #blockquote {
+        margin-top: 20px;
+    }
+
+  }
+
+  @media(max-width:600px){
+    #subscribe {
+        color: white;
+        font-size: 14px;
+    }
+    #header {
+        font-size: 23px;
+    }
+    #search_icon {
+        width: 22px;
+        height: 22px;
         background-size: cover;
         background-repeat: no-repeat;
     }
 
+    #author_name {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    
+    #bio {
+        font-size: 10px;
+    }
+
+    #post_title {
+        font-size: 20px;
+    }
+
+    #post_text {
+        text-indent: 50px;
+        text-align: justify;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 13px;
+    }
+
+    #footer {
+        font-size: 12px;
+    }
+
+    blockquote {
+        margin-top: 30px;
+        font-size: 13px;
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+  }
+
+  @media(max-width:400px){
+    #header {
+        font-size: 18px;
+    } 
+    #subscribe {
+        color: white;
+        font-size: 12px;
+    }
+    #search_icon {
+        width: 19px;
+        height: 19px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #post_text {
+        text-indent: 50px;
+        text-align: justify;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 12px;
+    }
+    blockquote {
+        margin-top: 30px;
+        font-size: 10px;
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+  }
+
+  @media(max-width:340px){
+    #header {
+        font-size: 16px;
+    } 
+    #subscribe {
+        color: white;
+        font-size: 11px;
+    }
+    #search_icon {
+        width: 17px;
+        height: 17px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #post_title {
+        font-size: 17px;
+    }
+
+    #post_text {
+        text-indent: 50px;
+        text-align: justify;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 11px;
+    }
+    blockquote {
+        margin-top: 30px;
+        font-size: 10px;
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+  }
+
+  @media(max-width:280px){
+    #header {
+        font-size: 15px;
+    } 
+    #subscribe {
+        color: white;
+        font-size: 10px;
+    }
+    #search_icon {
+        width: 16px;
+        height: 16px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #author_name {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+    
+    #bio {
+        font-size: 9px;
+    }
+
+    #post_title {
+        font-size: 14px;
+    }
+
+    #post_text {
+        text-indent: 50px;
+        text-align: justify;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 9px;
+    }
+    blockquote {
+        margin-top: 30px;
+        font-size: 10px;
+        margin-left: 0em;
+        margin-right: 0em;
+    }
   }
