@@ -1,0 +1,161 @@
+@import "../imges";
+
+.container{
+    display: grid;
+    margin: auto;
+    width: 100%;
+    /* grid-template-rows: 20% 15% 50% 15%; */
+    grid-template-rows: 150px 80px 500px 100px ;
+    grid-template-areas: 
+    "hd" "author" "main" "ft";
+    font-family: 'Montserrat', sans-serif;
+}
+
+#title {
+    grid-area: hd;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+#header {
+    font-size: 25px;
+}
+
+#subscribe {
+    color: white;
+    font-size: 12px;
+}
+
+#author {
+    grid-area: author;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#dot {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+
+}
+
+#content {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+
+#bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+#bottom-left {
+    margin-right: 10px;
+}
+
+#bottom-righr {
+    margin-left: 10px;
+}
+
+#author_info {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-left: 5px;
+    
+}
+
+#social_media {
+    display: flex;
+    flex-direction: row;
+}
+
+#profile_pic {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.facebook_icon {
+    background-image: url("../imges/facebook-icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.twitter_icon {
+    background-image: url("../imges/twitter.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#search_icon {
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#post_text {
+    text-indent: 50px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.button {
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+    padding: 8px 10px;
+  }
+
+  @media(min-width:900px){
+    #subscribe {
+        color: white;
+        font-size: 15px;
+    }
+    #header {
+        font-size: 35px;
+    }
+    #search_icon {
+        width: 25px;
+        height: 25px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+  }

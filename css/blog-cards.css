@@ -1,0 +1,47 @@
+.card{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 20% 65% 15%;
+    grid-template-areas: 
+    "hd hd" "sd main" "ft ft";
+    padding: 5px;
+    border: 2px solid rgb(160, 156, 156);
+    
+}
+
+/* .card_content {
+    display: flex;
+    flex-direction: row;
+} */
+
+#post_title {
+    grid-area: hd;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    text-decoration: underline;
+}
+
+#img {
+    grid-area: sd;
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+}
+
+#text {
+    grid-area: main;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 13px;
+}
+
+#card_footer {
+    grid-area: ft;
+    font-size: 12px;
+    text-align: right;
+    margin-top: 10px; 
+    color: black;   
+}
+

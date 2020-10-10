@@ -1,0 +1,20 @@
+.card_image1 {
+    background-image: url("../imges/bali.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card_image2 {
+    background-image: url("../imges/bali2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card_image3 {
+    background-image: url("../imges/bali3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
